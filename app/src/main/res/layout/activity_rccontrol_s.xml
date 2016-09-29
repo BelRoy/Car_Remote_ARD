@@ -27,41 +27,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/forward"
-        android:layout_above="@+id/backward"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="89dp"
         android:onClick="pressForward"
-        android:contentDescription="@string/forward"/>
+        android:contentDescription="@string/forward"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
     <ImageView
         android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/left"
-        android:layout_marginTop="77dp"
-        android:layout_below="@+id/stop"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="pressLeft"
-        android:contentDescription="@string/left"/>
+        android:contentDescription="@string/left"
+        android:layout_above="@+id/backward"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <ImageView
         android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/right"
+        android:onClick="pressRight"
+        android:contentDescription="@string/right"
         android:layout_alignTop="@+id/left"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="pressRight"
-        android:contentDescription="@string/right"/>
+        android:layout_alignParentEnd="true" />
     <ImageView
         android:id="@+id/backward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/backward"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/forward"
-        android:layout_alignStart="@+id/forward"
         android:onClick="pressBackward"
-        android:contentDescription="@string/backward"/>
+        android:contentDescription="@string/backward"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
   </RelativeLayout>
